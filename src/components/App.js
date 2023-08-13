@@ -45,7 +45,7 @@ class App extends Component {
         <p id="text" data-testid="text" >{currentSlide.text}</p>
 
         <button id="button-prev" data-testid="button-prev" onClick={this.prevSlide} disabled={index===0}>Previous Slide</button>
-        <button id="button-next" data-testid="button-next" onClick={this.nextSlide} disabled={index===slides.length}>Next Slide</button>
+        <button id="button-next" data-testid="button-next" onClick={this.nextSlide} disabled={index===slides.length-1}>Next Slide</button>
         <button id="button-restart" data-testid="button-restart" onClick={this.restartSlide} disabled={index===0}>Restart</button>
       </div>
     );
